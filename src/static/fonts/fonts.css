@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@276&display=swap');
+
+@font-face {
+	font-family: 'CrimsonText-BoldItalic';
+	src: url('../fonts/CrimsonText-BoldItalic/CrimsonText-BoldItalic.eot');
+	src: url('../fonts/CrimsonText-BoldItalic/CrimsonText-BoldItalic.eot?#iefix') format('embedded-opentype'),
+		  url('../fonts/CrimsonText-BoldItalic/CrimsonText-BoldItalic.svg#CrimsonText-BoldItalic') format('svg'),
+		  url('../fonts/CrimsonText-BoldItalic/CrimsonText-BoldItalic.ttf') format('truetype'),
+		  url('../fonts/CrimsonText-BoldItalic/CrimsonText-BoldItalic.woff') format('woff'),
+		  url('../fonts/CrimsonText-BoldItalic/CrimsonText-BoldItalic.woff2') format('woff2');
+	font-weight: 700;
+	font-style: normal;
+ }
+ 
+ @font-face {
+	font-family: 'CrimsonText-Italic';
+	src: url('../fonts/CrimsonText-Italic/CrimsonText-Italic.eot');
+	src: url('../fonts/CrimsonText-Italic/CrimsonText-Italic.eot?#iefix') format('embedded-opentype'),
+		  url('../fonts/CrimsonText-Italic/CrimsonText-Italic.svg#CrimsonText-Italic') format('svg'),
+		  url('../fonts/CrimsonText-Italic/CrimsonText-Italic.ttf') format('truetype'),
+		  url('../fonts/CrimsonText-Italic/CrimsonText-Italic.woff') format('woff'),
+		  url('../fonts/CrimsonText-Italic/CrimsonText-Italic.woff2') format('woff2');
+	font-weight: 400;
+	font-style: normal;
+ }

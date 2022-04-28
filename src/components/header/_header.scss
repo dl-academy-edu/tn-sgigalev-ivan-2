@@ -1,24 +1,38 @@
-header {
-  background-color: #89f7fe;
-  height: 80px;
-  display: flex;
-  align-items: center;
 
-  span {
-    padding-right: 20px;
-  }
-
-  a {
-    color: #000;
-    text-decoration: none;
-
-    &:not(:last-child) {
-      margin-right: 20px;
-    }
-    &:hover {
-      border-bottom: 1px solid #000;
-    }
-  }
+.header{
+	margin-top: 50px;
+	margin-bottom: 126px;
+		&__other{
+			margin-bottom: 60px;
+		}
+		&__logo{
+			margin: 0px 60px 0px 0px;
+		}
+		&__row{
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			font-size: 14px;
+			line-height: 19px;
+			text-transform: uppercase;
+			color: #1E0606;
+		}
+		&__nav{
+			flex: 1 1 auto;
+			display: flex;
+			
+		}
 }
 
+.header__nav{ 
+	ul{
+		display: flex;
+}
+	li{
+		margin: 0px 20px 0px 0px;
+}
+}
 
+.button_nav{
+	margin: 5px 23px 0px 0px;
+}

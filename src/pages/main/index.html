@@ -1,44 +1,203 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-    />
-    <link href="/common.css" rel="stylesheet" />
-    <link href="style.css" rel="stylesheet" />
-    <link rel="stylesheet" href="/static/fonts/oswald.css" />
-    <link rel="shortcut icon" href="/static/images/favicon.ico">
-    <title>Главная</title>
-  </head>
-  <body>
-    @@include('header/index.html')
-    <main class="index-main">
-      <div class="container">
-        <h1 class="title-block title-block_one">Главная</h1>
-        <h2 class="title-block title-block_two">
-          Вы находитесь на главной странице
-        </h2>
-        <div class="parallax-card">
-          <div class="parallax-card__wrapper-img">
-            <img
-              class="parallax-card__img"
-              src="static/images/cactus.jpg"
-              alt="Картинка кактуса"
-            />
-          </div>
+<html lang="en">
 
-          <div class="parallax-card__description">
-            <p class="parallax-card__paragraph">Кактус маминой подруги</p>
-            <p class="parallax-card__paragraph">
-              Не нужно поливать и никогда не сохнет
-            </p>
-          </div>
-        </div>
-      </div>
-    </main>
-    @@include('footer/index.html')
-    <script src="scripts.js"></script>
-  </body>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Main</title>
+	<link rel="stylesheet" href="./common.css">
+	<link rel="stylesheet" href="./style.css">
+	<link rel="stylesheet" href="../../static/fonts/fonts.css" </head>
+
+<body>
+
+	@@include('./header/index.html')
+
+	<main class="main container">
+
+		<div class="main__top">
+			<div class="main__column">
+				<div class="main__row_top">
+					<div class="main__slider">
+						<p class="slider__number">01</p>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+					<ul class="main__text">
+						<li>
+							<h1 class="main__title">THE OOH NOO COLLECTION</h1>
+						</li>
+						<li>
+							<p class="main__subtitle">Designed in Slovenia</p>
+						</li>
+						<li><button class="btn popup-link">EXPLORE NOW</button></li>
+					</ul>
+				</div>
+			</div>
+			<div class="main__row_bottom">
+				<p class="main__shipping">Free (continental) USA shipping on all orders of $100 USD or
+					more!</p>
+			</div>
+		</div>
+
+		<div class="main__products">
+			<h1 class="main__products_title title">Category Products</h1>
+			<ul class="products__row">
+				<li>
+					<a href="#" class="product__item shirt-icon">
+						<p class="title__product">APPAREL KIDS</p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#" class="product__item socks-icon">
+						<p class="title__product">HOLIDAY SHOP</p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#" class="product__item deer-icon">
+						<p class="title__product">TOYS</p>
+					</a>
+				</li>
+
+				<li>
+					<a href="#" class="product__item monkey-icon">
+						<p class="title__product">ACCESSORIES</p>
+					</a>
+				</li>
+			</ul>
+		</div>
+
+		<div class="main__products_slider">
+
+			<button class="slider__arrow_left">
+				<svg width="37" height="37" viewBox="0 0 37 37" fill="none" tabindex='1' xmlns="http://www.w3.org/2000/svg">
+					<rect width="37" height="37" fill="#70BBDC" fill-opacity="0.2" />
+					<path d="M25 5L12 18L25 31" stroke="#1E0606" stroke-width="4" />
+				</svg>
+			</button>
+			<button class="slider__arrow_right" tabindex='1'>
+				<svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<rect width="37" height="37" fill="#70BBDC" fill-opacity="0.2" />
+					<path d="M12 5L25 18L12 31" stroke="#1E0606" stroke-width="4" />
+				</svg>
+			</button>
+			<p class="slider__arrow_text text" tabindex='1'>Modern finds for the modern home. Curated goods by unique
+				designers
+				around
+				the world from fashion to furniture for kids and adults.</p>
+		</div>
+
+
+		<div class="main__delivery">
+			<div class="main__delivery_row">
+
+				<img src="../../static/images/main/woman.jpg" alt="" class="main__delivery_img">
+
+				<div class="main__delivery_column">
+
+					<ul class="delivery__titles">
+						<li>
+							<button type="button" class="delivery__title title">Delivery</button>
+						</li>
+
+						<li>
+							<button type="button" class="delivery__title hover__title">Delivery</button>
+						</li>
+
+						<li>
+							<button type="button" class="delivery__title hover__title">Guarantee</button>
+						</li>
+						<li>
+
+							<button type="button" class="delivery__title hover__title">Credit</button>
+						</li>
+					</ul>
+
+					<div class="delivery__text">
+						<p class="text">Some days i feel like i've been working on dlk my entire life and
+							there are other
+							days that i am completely shocked that four years have flown by. It's simply magical.</p>
+						<p class="text">What started as an outlet to deal with the traumatic loss of my
+							husband, dlk has
+							now become a truly happy place for me and i have you and all of the beautiful designers that we
+							work with to thank!</p>
+					</div>
+
+					@@include('./button/index.html',{
+					"href" : "#",
+					"class" : "delivery__btn",
+					"text" : "Learn More"
+					})
+
+				</div>
+			</div>
+		</div>
+
+		<ul class="labels">
+			<li>
+				<a href="#">
+					<img src="../../static/images/main/mail.png" alt="#">
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="../../static/images/main/apple.png" alt="#">
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="../../static/images/main/eltex.png" alt="#">
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="../../static/images/main/owox.png" alt="#">
+				</a>
+			</li>
+		</ul>
+
+		<ul class="main__bottom">
+
+			<li class="about__column">
+				<h3 class="about__top title">Design Life Kids</h3>
+				<h3 class="about__subtitle subtitle">About Us</h3>
+				<p class=" about__text text">Some days i feel like i've been working on dlk my entire
+					life
+					and
+					there are other days that i am completely shocked that four years have flown by. It's simply
+					magical.</p>
+
+				@@include('./button/index.html',{
+				"href" : "#",
+				"class" : "about__column_button",
+				"text" : "buy now"
+				})
+			</li>
+
+			<li class="about__column column_map">
+				<h3 class="about__top title">Contacts</h3>
+				<p class="about__text text">Some days i feel like i've been working on dlk my entire
+					life
+					and
+					there are other days that i am completely shocked that four years have flown by. It's simply
+					magical.</p>
+				<img src="./../../static/images/main/map.jpg" alt="#">
+			</li>
+
+		</ul>
+
+
+	</main>
+
+	@@include('./footer/index.html')
+	@@include('./popup/index.html')
+
+	<script src="./scripts.js"></script>
+</body>
+
 </html>

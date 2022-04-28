@@ -1,0 +1,26 @@
+
+%image {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+%pseudo_relative {
+	content: '';
+	display: block;
+	position: relative;
+}
+
+%pseudo_absolute {
+	content: '';
+	display: inline-block;
+	position: absolute;
+}
+
+@mixin position_size( $width: 250px, $height: 100px, $z-index: 2, $top: 83%, $left: -20% ) {
+	width: $width;
+	height: $height;
+	z-index: $z-index;
+	top: $top;
+	left: $left;
+}

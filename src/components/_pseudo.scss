@@ -1,0 +1,81 @@
+
+/* Hover, Active & etc. */
+.blog__bottom_pages button:hover,
+.toys__bottom_pages button:hover{
+	color: #AAAAAA;
+}
+
+.btn:hover{
+	background: #C29974;
+}
+
+.btn:active{
+	background: #CFAF91;
+}
+
+.header__row a:hover,
+.header__row button:hover{
+	opacity: 0.5;
+}
+
+.header__row a:active,
+.header__row button:active{
+	opacity: 0.2;
+}
+
+.title__product:hover,
+.blog__title:hover,
+.blog__title:active{
+	text-decoration: underline;
+
+}
+
+.hover__title:hover,
+.hover__title:active{
+	background: rgba(112, 187, 220, 0.2);
+	max-width: 326px;
+	font-family: $CrimsonText-BoldItalic;
+}
+
+.column__social_star:hover{
+	color: #836E5B;
+	cursor: pointer;
+}
+
+.footer__column_li a:hover{
+	color: #A1A1A1;
+}
+
+.footer__column_li a:active{
+	color: #696969;
+}
+
+.link_footer:hover{
+	text-decoration: underline;
+	color: #fff;
+}
+
+.footer__column_social li:hover{
+	opacity: 0.7;
+}
+
+.footer__column_social li:active{
+	opacity: 0.3;
+}
+
+.item__input{
+	padding: 0px 0px 0px 20px;
+}
+
+.item__input:hover,
+.item__input:active,
+.item__input:focus{
+	border: 1px solid #FFFDFD;
+	padding: 0px 0px 0px 19px;
+}
+
+.form__input:hover,
+.form__input:active,
+.form__input:focus{
+	border: 1px solid #C29974;
+}

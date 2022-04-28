@@ -1,0 +1,147 @@
+
+@keyframes car{
+
+	0%{
+	left: -20%;
+	}
+	50%{
+	left: 50%;
+	}
+	100%{
+	left: 100%;
+	}
+	}
+
+
+	@keyframes taxi {
+
+		0%{
+		left: -100%;
+		}
+		10%{
+		left: -100%;
+		}
+		20%{
+		left: -100%;
+		}
+		30%{
+		left: -50%;
+		}
+		40%{
+		left: 0%;
+		}
+		50%{
+		left: 25%;
+		}
+		60%{
+		left: 40%;
+		}
+		80%{
+		left: 60%;
+		}
+		90%{
+		left: 90%;
+		}
+		100%{
+		left: 150%;
+		}
+		}
+	
+
+	@keyframes text{
+		0%{
+			transform: translateY(150%);
+		}
+		2%{
+			transform: translateY(0%);
+		}
+		3%{
+			transform: translateY(5%);
+		}
+		15%{
+			transform: translateY(5%);
+		}
+		20%{
+			transform: translateY(5%);
+		}
+		22%{
+			transform: translateY(150%);
+		}
+		100%{
+			transform: translateY(150%);
+		}
+	}
+	
+	@keyframes taxi_text {
+		0%{
+			left: -100%;
+			}
+			10%{
+			left: -100%;
+			}
+			20%{
+			left: -100%;
+			}
+			30%{
+			left: -21%;
+			}
+			40%{
+			left: 27%;
+			}
+			50%{
+			left: 42%;
+			}
+			60%{
+			left: 57%;
+			}
+			80%{
+			left: 77%;
+			}
+			90%{
+			left: 107%;
+			}
+			100%{
+			left: 150%;
+			}
+}
+
+
+@keyframes clouds{
+
+	0%{
+	left: 100%;
+	}
+	50%{
+	left: 0%;
+	}
+	100%{
+	left: -100%;
+	}
+	}
+
+@keyframes hand{
+	0%{
+		transform: rotate(150deg);
+	}
+	15%{
+		transform: rotate(150deg);
+	}
+	20%{
+		transform: rotate(50deg);
+	}
+	25%{
+		transform: rotate(50deg);
+	}
+	30%{
+		transform: rotate(50deg);
+	}
+	35%{
+		transform: rotate(150deg);
+	}
+	50%{
+	transform: rotate(150deg);
+}
+100%{
+	transform: rotate(150deg);
+}
+}

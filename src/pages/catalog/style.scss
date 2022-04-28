@@ -1,3 +1,53 @@
-main.catalog-main {
- padding: 30px 0;
+@import "../../components/vars";
+@import "../../components/pseudo";
+@import "../../components/mixins";
+
+
+.products__row{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0px -10px 30px -10px;
+	justify-content: space-between;
 }
+
+
+.product__item{
+	padding: 0 10px;
+	margin: 0px 0px 23px 0px;
+		&:nth-child(3){
+			margin: 0px 305px 0px 0px;
+}
+		&:nth-child(4){
+			margin: 0px 0px 0px 200px;
+		}
+		&:nth-child(6){
+			margin: 0px 100px 0px 0px;
+		}
+}
+
+
+.main__bottom{
+	margin: 0px 0px 0px 200px;
+	max-width: 680px;
+}
+
+.main__bottom_title{
+	margin: 0px 0px 25px 0px;
+}
+
+.main__footer_text p{
+		margin: 0px 0px 15px 0px;
+		&:last-child{
+			margin: 0px 0px 0px 0px;
+		}
+}
+
+@each $img in shirt, socks, deer, monkey, flamingo, dress {
+	.#{$img}-icon {
+		 background-image: url("../../static/images/main/#{$img}.jpg");
+		 background-repeat: no-repeat;
+		 background-position: center;
+		 background-size: cover;
+	}
+}
+
