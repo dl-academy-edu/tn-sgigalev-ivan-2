@@ -1,0 +1,65 @@
+@import "../../components/vars";
+@import "../../components/pseudo";
+@import "../../components/mixins";
+
+.main__blog_bottom{
+	display:flex;
+	justify-content:space-between
+}
+.blog__bottom_pages{
+	display: flex;
+	flex:1 1 auto
+}
+.blog__bottom_pages li a{
+	font: normal 700 16px $Montserrat;
+	line-height:20px;
+	text-transform:uppercase;
+	color:#1E0606;
+	margin:0px 65px 0px 0px;
+}
+.blog__bottom_pages li:last-child a{
+	margin:0;
+}
+.blog__bottom_pages li:first-child a{
+	color:#C29974
+}
+.blog__bottom_pages li a:hover{
+	color:#AAA
+}
+.main__blog{
+	margin:0px 0px 13px 0px;
+}
+
+.blog{
+	&__row{
+		display:flex;
+		flex-wrap:wrap;
+		margin:0 -10px
+}
+	&__item{
+		flex:0 1 33.333%;
+		margin:0 0 40px 0;
+		padding:0 10px;
+		max-height:491px
+	}
+	&__img{
+		margin:0 0 20px 0
+	}
+	&__date{
+		color:#818181;
+		margin:0 0 10px 0;
+		font-size:16px
+	}
+	&__title{
+		font-family: $Montserrat;
+		font-style:normal;
+		font-weight:700;
+		font-size:24px;
+		line-height:31px
+	}
+	&__text{
+		margin:20px 0 0 0;
+		font-size:18px
+	}
+}
+

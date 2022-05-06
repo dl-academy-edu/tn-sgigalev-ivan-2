@@ -1,28 +1,170 @@
-// Подключение компонентов
-@import "./header/header";
+@import "./vars";
+@import "./pseudo";
+@import "./mixins";
+
+
+/* General */
+
+body{
+	height: 100%;
+}
+
+.container{
+	display: block;
+	width: 100%;
+	max-width: 1210px;
+	margin: 0 auto;
+	padding: 0px 15px;
+}
+
+body{
+	min-height: 100%;
+	font-family: $openSans;
+	font-weight: 400;
+	display: flex;
+	flex-direction: column;
+}
+
+.main{
+	flex: 1 1 auto;
+}
+
+
+/* Products */
+
+.products__row ul{
+	justify-content: space-between;
+	display: flex;
+	flex-wrap: wrap;
+	
+}
+
+.product__item{
+	position: relative;
+	max-height: 270px;
+	.title__product{
+		position: absolute;
+		z-index: 2;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		text-align: center;
+		}
+}
+
+
+
+
+/* Buttons and etc. */
+
+.page__link{
+	font: italic 400 20px $CrimsonText-Italic;
+	line-height: 25px;
+	color: $black;
+}
+
+/* Navigation */
+
+.main{
+	margin-bottom: 60px;
+}
+
+
+.main__nav{
+	margin: 0px 0px 50px 0px;
+}
+
+.page__link{
+	margin: 0px 40px 0px 0px;
+	padding: 0px 5px 0px 0px;
+
+}
+
+
+.main__nav_page {
+	display: flex;
+	margin: 0px 0px 50px 0px;
+
+		& li{
+			position: relative;
+		}
+
+		& li::after{
+		content: '';
+		background: url('../../src/static/images/icons/pointer.png') no-repeat;
+		position: absolute;
+		width: 8px;
+		height: 12px;
+		margin: 0px 0px 0px 0px;
+		top: 5px;
+		right: 13px;
+}
+		& li:last-child{
+	opacity: 0.5;
+}	
+		& li:last-child::after{
+	background: none;
+}
+}
+
+
+/* Main__products */
+
+.product__item {
+	width: 280px;
+	height: 270px;
+}
+
+/* Titles & Subtitles */
+
+.subtitle{
+	font: italic 400 26px $CrimsonText-Italic;
+	color: $black;
+}
+
+.title__other{
+	margin: 0px 0px 15px 0px;
+	letter-spacing: 1.5px;
+}
+
+.title{
+	font: normal bold 38px $Montserrat;;
+	font-size: 38px;
+	line-height: 46px;
+	text-transform: uppercase;
+	color: $black;
+}
+
+
+a{
+	color: $black;
+	cursor: pointer;
+}
+
+.title__product{
+	font: normal 700 26px $Montserrat;
+	line-height: 32px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
+}
+
+/* Texts */
+
+.text{
+	font: normal 400 16px $openSans;
+	line-height: 22px;
+	color: $black;
+}
+
+.text__wht{
+	color: $white;
+}
+
+@import "./nullstyle";
 @import "./footer/footer";
+@import "./header/header";
+@import "./header__other/header__other";
+@import "./popup/popup";
+@import "./button/button";
 
-body {
-  font-family: Oswald, sans-serif;
-}
-
-.container {
-  width: 100%;
-  max-width: 1180px;
-  margin: 0 auto;
-  padding-right: 20px;
-  padding-left: 20px;
-}
-
-.title-block {
-  margin: 0 0 20px 0;
-
-  &_one {
-    font-size: 30px;
-    text-transform: uppercase;
-  }
-  &_two {
-    font-size: 25px;
-    max-width: 500px;
-  }
-}

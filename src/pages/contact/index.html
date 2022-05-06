@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contact Us</title>
+	<link rel="stylesheet" href="../../common.css">
+	<link rel="stylesheet" href="./style.css">
+	<link rel="stylesheet" href="../../static/fonts/fonts.css" </head>
+</head>
+
+<body>
+	@@include('./header__other/index.html')
+
+	<main class="main container">
+
+		<div class="main__top">
+
+			<h1 class="main__title title title__other"> Contact &nbspUS </h1>
+
+			<ul class="main__nav_page">
+				<li>
+					<a href="index.html" class="page__link">Home</a>
+				</li>
+				<li>
+					<a href="contact.html" class="page__link">Contact us</a>
+				</li>
+			</ul>
+		</div>
+
+		<div class="main__row">
+			<div class="main__form">
+				<form action="#" method="post" class="modal">
+
+					<div class="form-text">
+						<label class="label" for="name">Name
+							<input type="text" id="name" name="name" class="form__input">
+						</label>
+					</div>
+
+					<div class="form-tel-email">
+						<label for="input__tel">Phone
+							<input type="tel" id="input__tel" class="form__input">
+						</label>
+
+						<label for="input__email">Email
+							<input type="email" id="input__email" class="form__input">
+						</label>
+					</div>
+
+					<div>
+						<p><label for="input__textarea">Message</label></p>
+						<textarea id="input__textarea" class="input__textarea"></textarea>
+					</div>
+
+					<div class="form__checkbox">
+						<input type="checkbox" name="yes" id="input__agreement" class="input__agreement">
+						<label for="input__agreement" class="checkbox__label">By clicking on the button, you consent to the
+							processing of
+							your
+							personal
+							data</label>
+					</div>
+					<button type="submit" class="btn">SUBMIT</button>
+				</form>
+			</div>
+
+			<div class="main__text">
+				<p class="text">Our support team are on-hand to assist with any issues you are experiencing.
+				</p>
+				<p class="text">Please use the form to contact us with your needs. Send us a message and
+					we'll respond as
+					soon as possible.</p>
+				<p class="text__bottom">An expert is waiting&nbsp;to<br>help you!</p>
+			</div>
+		</div>
+
+	</main>
+
+	@@include('./footer/index.html')
+</body>
+
+</html>

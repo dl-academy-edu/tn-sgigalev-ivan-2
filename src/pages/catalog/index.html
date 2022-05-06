@@ -1,28 +1,92 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-    />
-    <link href="/common.css" rel="stylesheet" />
-    <link href="style.css" rel="stylesheet" />
-    <link rel="stylesheet" href="/static/fonts/oswald.css" />
-    <link rel="shortcut icon" href="/static/images/favicon.ico">
-    <title>Каталог</title>
-  </head>
-  <body>
-    @@include('header/index.html')
-    <main class="catalog-main">
-      <div class="container">
-        <h1 class="title-block title-block_one">Каталог</h1>
-        <h2 class="title-block title-block_two">
-          Вы находитесь на странице каталога
-        </h2>
-      </div>
-    </main>
-    @@include('footer/index.html')
-    <script src="index.js"></script>
-  </body>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Catalog</title>
+	<link rel="stylesheet" href="../../common.css">
+	<link rel="stylesheet" href="./style.css">
+	<link rel="stylesheet" href="../../static/fonts/fonts.css" </head>
+
+<body>
+	@@include('./header__other/index.html')
+
+	<main class="main container">
+
+		<div class="main__top">
+			<h1 class="main__title title title__other"> Category Products </h1>
+
+			<ul class="main__nav_page">
+				<li><a href="index.html" class="page__link">Home</a></li>
+				<li>
+					<a href="catalog.html" class="page__link">Catalog</a>
+				</li>
+			</ul>
+
+			<ul class="products__row">
+
+				<li class="product__item shirt-icon">
+					<a href="#">
+						<p class="title__product">APPAREL KIDS</p>
+					</a>
+				</li>
+
+				<li class="product__item socks-icon">
+					<a href="#">
+						<p class="title__product">HOLIDAY SHOP</p>
+					</a>
+				</li>
+
+				<li class="product__item deer-icon">
+					<a href="#">
+						<p class="title__product">TOYS</p>
+					</a>
+				</li>
+
+				<li class="product__item monkey-icon">
+					<a href="#">
+						<p class="title__product">ACCESSORIES</p>
+					</a>
+				</li>
+
+				<li class="product__item flamingo-icon">
+					<a href="#">
+						<p class="title__product">TOYS</p>
+					</a>
+				</li>
+
+				<li class="product__item dress-icon">
+					<a href="#">
+						<p class="title__product ">APPAREL ADULTS</p>
+					</a>
+				</li>
+			</ul>
+
+		</div>
+
+		<div class="main__bottom">
+			<h2 class="main__bottom_title title">Product Description</h2>
+			<div class="main__footer_text text">
+				<p>Interactive doll Zapf Creation Baby Born Sister can drink from a bottle and almost really cry. You can
+					even
+					bathe her, just like a little sister.</p>
+				<p>A toy with a height of 43 cm bends its knees, the head rotates, it can stand upright. Such a doll will
+					be
+					an
+					excellent choice for a gift for a girl from 4 years old.</p>
+				<p>The set includes a miniature set of fashionable clothes, a hairbrush, a bottle for water, a pair of
+					hairpins
+					and elastic bands for hair, as well as two bracelets: one for the doll, the other for her young
+					mistress.
+				</p>
+			</div>
+		</div>
+
+	</main>
+
+	@@include('./footer/index.html')
+</body>
+
 </html>

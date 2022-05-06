@@ -1,28 +1,188 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-    />
-    <link href="/common.css" rel="stylesheet" />
-    <link href="style.css" rel="stylesheet" />
-    <link rel="stylesheet" href="/static/fonts/oswald.css" />
-    <link rel="shortcut icon" href="/static/images/favicon.ico" />
-    <title>Игрушки</title>
-  </head>
-  <body>
-    @@include('header/index.html')
-    <main class="toys-main">
-      <div class="container">
-        <h1 class="title-block title-block_one">Игрушки</h1>
-        <h2 class="title-block title-block_two">
-          Вы находитесь на странице игрушек
-        </h2>
-      </div>
-    </main>
-    @@include('footer/index.html')
-    <script src="index.js"></script>
-  </body>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Toys</title>
+	<link rel="stylesheet" href="../../common.css">
+	<link rel="stylesheet" href="./style.css">
+	<link rel="stylesheet" href="../../static/fonts/fonts.css" </head>
+</head>
+
+<body>
+	@@include('./header__other/index.html')
+
+	<main class="main">
+		<div class="container">
+			<h1 class="main__title title title__other"> Toy for kids </h1>
+
+			<ul class="main__nav_page">
+				<li>
+					<a href="index.html" class="page__link">Home</a>
+				</li>
+				<li>
+					<a href="catalog.html" class="page__link">Catalog</a>
+				</li>
+				<li>
+					<a href="toys.html" class="page__link">Toys</a>
+				</li>
+			</ul>
+
+		</div>
+
+		<div class="main__forms">
+			<div class="container">
+
+				<div class="toys-main__form">
+					<div>
+						<p class="main__legend" tabindex='1'>Cost</p>
+						<input type="range" min="0" max="100" step="1" value="50" name="range" class="range">
+					</div>
+
+					<div>
+						<fieldset class="fieldset__color">
+							<legend class="main__legend" tabindex='1'>Color</legend>
+							<ul class="fieldset__color_li">
+								<li>
+									<input type="checkbox" name="option1" id="color_black" class="checkbox__input input__toys">
+									<label for="color_black" class="checkbox__label" tabindex='1'>Black</label>
+								</li>
+								<li>
+									<input type="checkbox" name="option2" id="color_blue" class="checkbox__input input__toys">
+									<label for="color_blue" class="checkbox__label" tabindex='1'>Blue</label>
+								</li>
+								<li>
+									<input type="checkbox" name="option3" id="color_green" class="checkbox__input input__toys">
+									<label for="color_green" class="checkbox__label" tabindex='1'>Green</label>
+								</li>
+								<li>
+									<input type="checkbox" name="option4" id="color_white" class="checkbox__input input__toys">
+									<label for="color_white" class="checkbox__label" tabindex='1'>White</label>
+								</li>
+							</ul>
+						</fieldset>
+					</div>
+
+					<div>
+						<fieldset class="fieldset__delivery">
+							<legend class="main__legend" tabindex='1'>Delivery</legend>
+							<ul class="fieldset__delivery_list">
+								<li>
+									<input type="radio" name="shipping" id="free_ship" class="radio__input"
+										onclick="clickRadio(this)">
+									<label for="free_ship" class="radio__label" tabindex='1'>Free Shipping</label>
+								</li>
+								<li>
+									<input type="radio" name="shipping" id="fast_ship" class="radio__input"
+										onclick="clickRadio(this)">
+									<label for="fast_ship" class="radio__label" tabindex='1'>Fast Shipping</label>
+								</li>
+							</ul>
+						</fieldset>
+					</div>
+
+					<div>
+						<fieldset class="fieldset__amount">
+							<legend class="main__legend" tabindex='1'>Amount</legend>
+							<ul class="fieldset__amount_list">
+								<li>
+									<input type="radio" name="amount" id="0-5" class="input__amount" onclick="clickRadio(this)">
+									<label for="0-5" class="label__amount" tabindex='1'>0-5</label>
+								</li>
+								<li>
+									<input type="radio" name="amount" id="10-20" class="input__amount"
+										onclick="clickRadio(this)">
+									<label for="10-20" class="label__amount" tabindex='1'>10-20</label>
+								</li>
+								<li>
+									<input type="radio" name="amount" id="20-50" class="input__amount"
+										onclick="clickRadio(this)">
+									<label for="20-50" class="label__amount" tabindex='1'>20-50</label>
+								</li>
+							</ul>
+						</fieldset>
+					</div>
+					<div class="main__header_button">
+						<button type="submit" class="btn" tabindex='1'>apply</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="main__toys">
+			<div class="container">
+				<div class="main__toys_items">
+					<div class="main__toys_item">
+						<img src="../../static/images/toys/shark.png" alt="#">
+						<p class="toys__title">SHARKY BEAN BAG CHAIR COVER</p>
+						<span class="toys__subtitle">$60.00 USD</span>
+						<a href="#" class="toys__item_hover">LEARN MORE</a>
+					</div>
+					<div class="main__toys_item">
+						<img src="../../static/images/toys/brass.png" alt="#">
+						<p class="toys__title">BRASS DECO FRAMES</p>
+						<span class="toys__subtitle">$66.00 USD</span>
+						<a href="#" class="toys__item_hover">LEARN MORE</a>
+					</div>
+					<div class="main__toys_item">
+						<img src="../../static/images/toys/apron.png" alt="#">
+						<p class="toys__title">CIBO FULL APRON</p>
+						<span class="toys__subtitle">$60.00 USD</span>
+						<a href="#" class="toys__item_hover below">LEARN MORE</a>
+					</div>
+					<div class="main__toys_item">
+						<img src="../../static/images/toys/machine.png" alt="#">
+						<p class="toys__title">GATCHA GATCHA GUMBALL MACHINE</p>
+						<span class="toys__subtitle">$56.00 USD</span>
+						<a href="#" class="toys__item_hover">LEARN MORE</a>
+					</div>
+					<div class="main__toys_item">
+						<img src="../../static/images/toys/candle.png" alt="#">
+						<p class="toys__title">CHRISTMAS ADVENT SCENTED CANDLE</p>
+						<span class="toys__subtitle">$29.00 USD</span>
+						<a href="#" class="toys__item_hover">LEARN MORE</a>
+					</div>
+					<div class="main__toys_item">
+						<img src="../../static/images/toys/light.png" alt="#">
+						<p class="toys__title">TANGLE SPINNING TEA LIGHT</p>
+						<span class="toys__subtitle">$56.00 USD</span>
+						<a href="#" class="toys__item_hover">LEARN MORE</a>
+					</div>
+				</div>
+				<div class="main__toys_bottom">
+					<ul>
+						<li>
+							<button class="toys__bottom_tick">
+								<svg width="18" height="30" viewBox="0 0 18 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M16 2L3 15L16 28" stroke="#1E0606" stroke-opacity="0.12" stroke-width="4" />
+								</svg>
+							</button>
+						</li>
+						<li>
+							<ul class="toys__bottom_pages">
+								<li><a href="#">1</a></li>
+								<li><a href="#">2</a></li>
+								<li><a href="#">3</a></li>
+								<li><a href="#">4</a></li>
+							</ul>
+						</li>
+						<li>
+							<button class="toys__bottom_tick">
+								<svg width="18" height="30" viewBox="0 0 18 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M2 2L15 15L2 28" stroke="#1E0606" stroke-opacity="0.12" stroke-width="4" />
+								</svg>
+							</button>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	@@include('./footer/index.html')
+
+</body>
+
 </html>
