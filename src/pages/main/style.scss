@@ -302,3 +302,238 @@ margin: 0px 0px 30px 0px;
 	}
 }
 
+.main__img_smaller{
+	display: none;
+}
+
+.labels__smaller{
+	display: none;
+}
+.labels__smallest{
+	display: none;
+}
+
+.main__img_smallest{
+	display: none;
+	}
+
+
+@media ( max-width:768px ) {
+	.main{
+		margin-bottom: 0px;
+	}
+	.main__top{
+		background: #EEE4DB;
+		max-height: 411px;
+		margin: 0px 0px 90px 0px;
+		position: relative;
+			&:after{
+				content: '';
+				position: absolute;
+				background-image: url('../../static/images/main/monster-less.png');
+				display: block;
+				width: 385px;
+				height: 286px;
+				bottom: 36px;
+				right: 8px;
+			}
+	}
+	.main__slider{
+		margin: 17px 11px 0 0;
+		align-items: flex-start;
+	}
+	.slider__number {
+		padding: 0;
+	}
+	.main__text {
+		align-items: center;
+		margin: 76px 0 102px 0;
+	}
+	.main__products {
+	overflow: hidden;
+	margin: 0 0 27px;
+   }
+	.products__row {
+		width: 100%;
+		margin: 0 -10px 0 -10px;
+	}
+.products__row li {
+	padding: 0px 10px 0px 10px;
+	}
+.main__img_smaller{
+	display: block;
+	padding: 0 18px 0 0;
+	}
+.main__delivery_img{
+	display: none;
+	}		
+.main__delivery_column {
+	margin: 20px 0 0;
+	padding: 0px 0px 0 18px;
+	}
+.delivery__title {
+	padding: 11px 180px 11px 20px;
+	}
+.delivery__text {
+	max-width: 314px;
+	margin: 0 0 26px 20px;
+	}
+.delivery__btn {
+	margin: 0 0 0 20px;
+	}
+	.labels__smaller{
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 86px;
+	}
+	.labels{
+		display: none;
+	}
+	.labels__smallest{
+		display: none;
+		}
+	.about__column {
+		max-width: 314px;
+	}
+	.about__column img {
+		margin-bottom: -75px;
+	}
+	.main__bottom {
+		margin: 0 -10px 95px 0px;
+  }
+  .about__column {
+	padding: 0 10px;
+  }
+    }
+
+@media ( max-width:375px ) {
+	.header {
+		margin-bottom: 26px;
+   }
+	.main__title{
+		font-size: 36px;
+		line-height: 110%;
+	}
+	.main__subtitle{
+		font-size: 18px;
+	}
+	.main__text {
+		order: 1;
+		align-items: center;
+		margin: 76px 0px 150px 20px;
+  }
+  .main__products_slider{
+	  align-items: flex-start;
+  }
+  .slider__arrow_right {
+	margin: 0 16px 0 0;
+}
+	.main__top{
+		background: #EEE4DB;
+		max-height: 448px;
+		margin: 0px 0px 80px 0px;
+		position: relative;
+			&:after{
+				content: '';
+				position: absolute;
+				background-image: url('../../static/images/main/monster-smallest.png');
+				display: block;
+				width: 292px;
+				height: 226px;
+				bottom: 0px;
+				right: 8px;
+			}
+		width: 100vw;
+	}
+	.main__slider{
+		align-items: center;
+		order: 2;
+	}
+	.slider__number {
+		padding: 0;
+	}
+	.main__text {
+		align-items: center;
+		margin: 76px 0 188px 20px;
+	}
+	.main__products {
+	overflow: hidden;
+	margin: 0 0 27px 20px;
+   }
+	.products__row {
+		width: 100%;
+		margin: 0 -10px 0 -10px;
+	}
+.products__row li {
+	padding: 0px 10px 0px 10px;
+	}
+.main__products_slider {
+		margin: 0 0 90px 20px;
+	}
+.main__img_smaller{
+	display: none;
+	}
+.main__img_smallest{
+	display: block;
+	}
+.main__delivery{
+	margin: 0 20px 83px 20px;
+}
+.main__delivery_row{
+	flex-direction: column;
+}
+.main__delivery_img{
+	display: none;
+	}		
+.main__delivery_column {
+	margin: 20px 0 0;
+	padding: 0px 0px 0 18px;
+	}
+.delivery__title {
+	padding: 11px 180px 11px 20px;
+	}
+.delivery__text {
+	max-width: 314px;
+	margin: 0 0 26px 20px;
+	}
+.delivery__btn {
+	margin: 0 0 0 20px;
+	}
+	.labels__smallest{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		margin-bottom: 86px;
+		padding: 0 20px;
+		& li{
+			margin-bottom: 31px;
+		}
+	}
+	.labels__smaller{
+		display: none;
+	}
+	.about__column {
+		max-width: 314px;
+	}
+	.about__column img {
+		margin-bottom: -75px;
+	}
+	.main__bottom {
+		flex-direction: column;
+		margin: 0 -10px 75px 0px;
+		& li{
+			margin-bottom: 50px;
+		}
+  }
+  .about__column {
+	padding: 0 10px;
+	max-width: 100%;
+  }
+  .button__menu{
+	  margin-left: 30px;
+  }
+  .about__column img {
+	padding: 0 20px 0 10px;
+}
+
+  }
