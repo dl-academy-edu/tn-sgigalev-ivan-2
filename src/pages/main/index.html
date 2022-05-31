@@ -47,27 +47,28 @@
 				<h1 class="main__products_title title">Category Products</h1>
 				<ul class="products__row">
 					<li>
-						<a href="#" class="product__item shirt-icon">
-							<p class="title__product">APPAREL KIDS</p>
-						</a>
+						<div class="products__image_wrapper">
+							<img src="../../static/images/main/shirt.jpg" alt="">
+							<a class="title__product">APPAREL KIDS</a>
+						</div>
 					</li>
-
 					<li>
-						<a href="#" class="product__item socks-icon">
-							<p class="title__product">HOLIDAY SHOP</p>
-						</a>
+						<div class="products__image_wrapper">
+							<img src="../../static/images/main/socks.jpg" alt="">
+							<a class="title__product">HOLIDAY SHOP</a>
+						</div>
 					</li>
-
 					<li>
-						<a href="#" class="product__item deer-icon">
-							<p class="title__product">TOYS</p>
-						</a>
+						<div class="products__image_wrapper">
+							<img src="../../static/images/main/deer.jpg" alt="">
+							<a class="title__product">TOYS</a>
+						</div>
 					</li>
-
 					<li>
-						<a href="#" class="product__item monkey-icon">
-							<p class="title__product">ACCESSORIES</p>
-						</a>
+						<div class="products__image_wrapper">
+							<img src="../../static/images/main/monkey.jpg" alt="">
+							<a class="title__product">ACCESSORIES</a>
+						</div>
 					</li>
 				</ul>
 			</div>
@@ -96,10 +97,14 @@
 
 			<div class="main__delivery">
 				<div class="main__delivery_row">
-
-					<img src="../../static/images/main/woman.jpg" alt="" class="main__delivery_img">
-					<img src="../../static/images/main/woman-smaller.png" alt="" class="main__img_smaller">
-					<img src="../../static/images/main/woman-smallest.png" alt="" class="main__img_smallest">
+					<div class="main__picture_wrapper">
+						<picture class="main__picture">
+							<source srcset="../../static/images/main/woman-smallest.png" media="(max-width: 376px)">
+							<source srcset="../../static/images/main/woman-smaller.png" media="(max-width: 769px)">
+							<source srcset="../../static/images/main/woman.jpg">
+							<img src="../../static/images/main/woman.jpg" alt="woman">
+						</picture>
+					</div>
 					<div class="main__delivery_column">
 
 						<ul class="delivery__titles">
@@ -143,66 +148,42 @@
 			<ul class="labels">
 				<li>
 					<a href="#">
-						<img src="../../static/images/main/mail.png" alt="#">
+						<picture>
+							<source srcset="../../static/images/main/mail-smallest.png" media="(max-width: 376px)">
+							<source srcset="../../static/images/main/mail-smaller.png" media="(max-width: 769px)">
+							<source srcset="../../static/images/main/mail.png">
+							<img src="../../static/images/main/mail.png" alt="#">
+						</picture>
 					</a>
 				</li>
 				<li>
 					<a href="#">
-						<img src="../../static/images/main/apple.png" alt="#">
+						<picture>
+							<source srcset="../../static/images/main/apple-smallest.png" media="(max-width: 376px)">
+							<source srcset="../../static/images/main/apple-smaller.png" media="(max-width: 769px)">
+							<source srcset="../../static/images/main/apple.png">
+							<img src="../../static/images/main/apple.png" alt="#">
+						</picture>
 					</a>
 				</li>
 				<li>
 					<a href="#">
-						<img src="../../static/images/main/eltex.png" alt="#">
+						<picture>
+							<source srcset="../../static/images/main/eltex-smallest.png" media="(max-width: 376px)">
+							<source srcset="../../static/images/main/eltex-smaller.png" media="(max-width: 769px)">
+							<source srcset="../../static/images/main/eltex.png">
+							<img src="../../static/images/main/eltex.png" alt="#">
+						</picture>
 					</a>
 				</li>
 				<li>
 					<a href="#">
-						<img src="../../static/images/main/owox.png" alt="#">
-					</a>
-				</li>
-			</ul>
-			<ul class="labels__smaller">
-				<li>
-					<a href="#">
-						<img src="../../static/images/main/mail-smaller.svg" alt="#">
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<img src="../../static/images/main/apple-smaller.svg" alt="#">
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<img src="../../static/images/main/eltex-smaller.svg" alt="#">
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<img src="../../static/images/main/owox-smaller.svg" alt="#">
-					</a>
-				</li>
-			</ul>
-			<ul class="labels__smallest">
-				<li>
-					<a href="#">
-						<img src="../../static/images/main/mail-smallest.svg" alt="#">
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<img src="../../static/images/main/apple-smallest.svg" alt="#">
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<img src="../../static/images/main/eltex-smallest.svg" alt="#">
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<img src="../../static/images/main/owox-smallest.svg" alt="#">
+						<picture>
+							<source srcset="../../static/images/main/owox-smallest.png" media="(max-width: 376px)">
+							<source srcset="../../static/images/main/owox-smaller.png" media="(max-width: 769px)">
+							<source srcset="../../static/images/main/owox.png">
+							<img src="../../static/images/main/owox.png" alt="#">
+						</picture>
 					</a>
 				</li>
 			</ul>

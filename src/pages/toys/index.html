@@ -36,76 +36,86 @@
 			<div class="container">
 
 				<div class="toys-main__form">
-					<div>
-						<p class="main__legend" tabindex='1'>Cost</p>
-						<input type="range" min="0" max="100" step="1" value="50" name="range" class="range">
-					</div>
+					<div class="main__form_wrapper">
+						<div>
+							<p class="main__legend" tabindex='1'>Cost</p>
+							<input type="range" min="0" max="100" step="1" value="50" name="range" class="range">
+						</div>
 
-					<div>
-						<fieldset class="fieldset__color">
-							<legend class="main__legend" tabindex='1'>Color</legend>
-							<ul class="fieldset__color_li">
-								<li>
-									<input type="checkbox" name="option1" id="color_black" class="checkbox__input input__toys">
-									<label for="color_black" class="checkbox__label" tabindex='1'>Black</label>
-								</li>
-								<li>
-									<input type="checkbox" name="option2" id="color_blue" class="checkbox__input input__toys">
-									<label for="color_blue" class="checkbox__label" tabindex='1'>Blue</label>
-								</li>
-								<li>
-									<input type="checkbox" name="option3" id="color_green" class="checkbox__input input__toys">
-									<label for="color_green" class="checkbox__label" tabindex='1'>Green</label>
-								</li>
-								<li>
-									<input type="checkbox" name="option4" id="color_white" class="checkbox__input input__toys">
-									<label for="color_white" class="checkbox__label" tabindex='1'>White</label>
-								</li>
-							</ul>
-						</fieldset>
-					</div>
+						<div class="main__form_options">
+							<div>
+								<fieldset class="fieldset__color">
+									<legend class="main__legend" tabindex='1'>Color</legend>
+									<ul class="fieldset__color_li">
+										<li>
+											<input type="checkbox" name="option1" id="color_black"
+												class="checkbox__input input__toys">
+											<label for="color_black" class="checkbox__label" tabindex='1'>Black</label>
+										</li>
+										<li>
+											<input type="checkbox" name="option2" id="color_blue"
+												class="checkbox__input input__toys">
+											<label for="color_blue" class="checkbox__label" tabindex='1'>Blue</label>
+										</li>
+										<li>
+											<input type="checkbox" name="option3" id="color_green"
+												class="checkbox__input input__toys">
+											<label for="color_green" class="checkbox__label" tabindex='1'>Green</label>
+										</li>
+										<li>
+											<input type="checkbox" name="option4" id="color_white"
+												class="checkbox__input input__toys">
+											<label for="color_white" class="checkbox__label" tabindex='1'>White</label>
+										</li>
+									</ul>
+								</fieldset>
+							</div>
+							<div>
+								<fieldset class="fieldset__delivery">
+									<legend class="main__legend" tabindex='1'>Delivery</legend>
+									<ul class="fieldset__delivery_list">
+										<li>
+											<input type="radio" name="shipping" id="free_ship" class="radio__input"
+												onclick="clickRadio(this)">
+											<label for="free_ship" class="radio__label" tabindex='1'>Free Shipping</label>
+										</li>
+										<li>
+											<input type="radio" name="shipping" id="fast_ship" class="radio__input"
+												onclick="clickRadio(this)">
+											<label for="fast_ship" class="radio__label" tabindex='1'>Fast Shipping</label>
+										</li>
+									</ul>
+								</fieldset>
+							</div>
+						</div>
 
-					<div>
-						<fieldset class="fieldset__delivery">
-							<legend class="main__legend" tabindex='1'>Delivery</legend>
-							<ul class="fieldset__delivery_list">
-								<li>
-									<input type="radio" name="shipping" id="free_ship" class="radio__input"
-										onclick="clickRadio(this)">
-									<label for="free_ship" class="radio__label" tabindex='1'>Free Shipping</label>
-								</li>
-								<li>
-									<input type="radio" name="shipping" id="fast_ship" class="radio__input"
-										onclick="clickRadio(this)">
-									<label for="fast_ship" class="radio__label" tabindex='1'>Fast Shipping</label>
-								</li>
-							</ul>
-						</fieldset>
-					</div>
+						<div>
+							<fieldset class="fieldset__amount">
+								<legend class="main__legend" tabindex='1'>Amount</legend>
+								<ul class="fieldset__amount_list">
+									<li>
+										<input type="radio" name="amount" id="0-5" class="input__amount"
+											onclick="clickRadio(this)">
+										<label for="0-5" class="label__amount" tabindex='1'>0-5</label>
+									</li>
+									<li>
+										<input type="radio" name="amount" id="10-20" class="input__amount"
+											onclick="clickRadio(this)">
+										<label for="10-20" class="label__amount" tabindex='1'>10-20</label>
+									</li>
+									<li>
+										<input type="radio" name="amount" id="20-50" class="input__amount"
+											onclick="clickRadio(this)">
+										<label for="20-50" class="label__amount" tabindex='1'>20-50</label>
+									</li>
+								</ul>
+							</fieldset>
+						</div>
 
-					<div>
-						<fieldset class="fieldset__amount">
-							<legend class="main__legend" tabindex='1'>Amount</legend>
-							<ul class="fieldset__amount_list">
-								<li>
-									<input type="radio" name="amount" id="0-5" class="input__amount" onclick="clickRadio(this)">
-									<label for="0-5" class="label__amount" tabindex='1'>0-5</label>
-								</li>
-								<li>
-									<input type="radio" name="amount" id="10-20" class="input__amount"
-										onclick="clickRadio(this)">
-									<label for="10-20" class="label__amount" tabindex='1'>10-20</label>
-								</li>
-								<li>
-									<input type="radio" name="amount" id="20-50" class="input__amount"
-										onclick="clickRadio(this)">
-									<label for="20-50" class="label__amount" tabindex='1'>20-50</label>
-								</li>
-							</ul>
-						</fieldset>
-					</div>
-					<div class="main__header_button">
-						<button type="submit" class="btn" tabindex='1'>apply</button>
+						<div class="main__header_button">
+							<button type="submit" class="btn" tabindex='1'>apply</button>
+						</div>
+
 					</div>
 				</div>
 			</div>

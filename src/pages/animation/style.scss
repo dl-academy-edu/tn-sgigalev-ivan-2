@@ -7,151 +7,148 @@ body{
 	overflow-x: hidden;
 }
 
-.main {
-	&__animation {
+img{
+	width: 100%;
+}
+
+.main{
+	&__animation{
+		position: relative;
+	}
+	&__top{
+		margin-bottom: 188px;
+	}
+	&__clouds{
+		position: absolute;
+		top: -15%;
+		left: 0;
 		width: 100%;
-		max-width: 100%;
 	}
-	&__sun::before{
-		@extend %pseudo_absolute;
-		background: url('../../static/images/animation/sun.svg');
-		@include position_size(59px, 59px, 6, 28%, 75%);
+	&__sun{
+		position: absolute;
+		top: -15%;
+		left: 85%;
+		width: 5%;
+		max-width: 60px;
+  	}
+	&__lattern{
+		position: absolute;
+		max-width: 214px;
+		top: 25%;
+		left: 72%;
+		z-index: 7;
+		width: 10%;
 	}
-	&__sun::after{
-		@extend %pseudo_absolute;
-		background: url('../../static/images/animation/clouds.svg');
+	&__lattern01{
+		position: absolute;
+		max-width: 150px;
+		top: 22%;
+		left: 10%;
+		z-index: 5;
+		width: 7%;
+	}
+	&__lattern02{
+		overflow: hidden;
+		position: absolute;
+		max-width: 150px;
+		top: 22%;
+		right: -3%;
+		z-index: 5;
+		width: 7%;
+	}
+	&__carone{
+		max-width: 250px;
+		position: absolute;
+		top: 45%;
+		z-index: 1;
+		width: 18%;
+	}
+	&__cartwo{
+		position: absolute;
+		max-width: 203px;
+		top: 50%;
 		z-index: 2;
-		height: 135px;
-		width: 100%;
-		top: 33%;
-		left: 100%;
-		animation: clouds 30s linear infinite;
-		animation-delay: 10s;
+		width: 14%;
 	}
-	&__clouds::before{
-		@extend %pseudo_relative;
-		background: url('../../static/images/animation/clouds.svg');
-		z-index: 1;
-		width: 100%;
-		height: 135px;
-		animation: clouds 30s linear infinite;
+	&__carthree{
+		max-width: 246px;
+		position: absolute;
+		top: 52%;
+		z-index: 3;
+		width: 17%;
 	}
-	&__clouds::after{
-		@extend %pseudo_absolute;
-		background: url('../../static/images/animation/lantern-bw.svg') no-repeat;
-		@include position_size(150px, 100%, 6, 60%, 40%);
-		}
-
-	&__city::before {
-		@extend %pseudo_relative;
-		background: url('../../static/images/animation/city.svg') 50% 0 no-repeat;
-		height: 768px;
-		background-size: cover;
-		z-index: 1;
-	}
-	&__city::after {
-		@extend %pseudo_absolute;
-		background: url('../../static/images/animation/lantern.svg') no-repeat;
-		@include position_size(215px, 100%, 7, 63%, 76%);
-	}
-
-	&__carone::before{
-		@extend %pseudo_absolute;
-		background: url('../../static/images/animation/Car_one.svg') no-repeat;
-		@include position_size(250px, 100px, 2, 83%, -20%);
-		animation: car 4s linear infinite;
-	}
-	&__cartwo::before{
-		@extend %pseudo_absolute;
-		background: url('../../static/images/animation/Car_two.svg') no-repeat;
-		@include position_size(205px, 96px, 3, 85%, -20%);
-		animation: car 7s linear infinite;
-		animation-delay: 1s;
-	}
-	&__carthree::before{
-		@extend %pseudo_absolute;
-		background: url('../../static/images/animation/Car_three.svg') no-repeat;
-		@include position_size(250px, 65px, 1, 85%, -20%);
-		animation: car 3s linear infinite;
-		animation-delay: 2s;
-	}
-	&__carfour::before{
-		@extend %pseudo_absolute;
-		background: url('../../static/images/animation/Car_four.svg') no-repeat;
-		@include position_size(270px, 126px, 4, 83%, -20%);
-		animation: car 5s linear infinite;
-		animation-delay: 3s;
+	&__carfour{
+		max-width: 268px;
+		position: absolute;
+		top: 49%;
+		z-index: 4;
+		width: 19%;
 	}
 	&__taxi{
-		@include position_size(890px, 270px, 6, 83%, -100%);
+		max-width: 886px;
 		position: absolute;
-		display: inline-block;
-		animation: taxi 20s reverse linear infinite;
-		background: url('../../static/images/animation/car.svg') no-repeat;
+		top: 52%;
+		z-index: 8;
+		width: 37%;
 	}
-	.main__texttaxi{
-		@include position_size(160px, 110px, 6, 75%, -100%);
+	&__texttaxi{
 		position: absolute;
-		display: inline-block;
-		overflow: hidden;
-		animation: taxi_text 20s reverse linear infinite;
-		&::after{
-			@extend %pseudo_relative;
-			background: url('../../static/images/animation/message2.svg') no-repeat;
-			@include position_size(160px, 105px, 6, 0%, 0%);
-			animation: text 10s 5.5s infinite;
-			transform: translateY(150%);
+		top: -45%;
+		left: 28%;
+		z-index: 8;
+		max-width: 160px;
+		width: 32%;
+	}
+	&__man {
+		max-width: 214px;
+		position: absolute;
+		top: 50%;
+		left: 25%;
+		z-index: 10;
+		width: 15%;
+	}
+	&__woman {
+		max-width: 271px;
+		position: absolute;
+		top: 47%;
+		left: 16%;
+		z-index: 9;
+		width: 7%;
 	}
 }
-	
-	&__man::before{
-		@extend %pseudo_absolute;
-		background: url('../../static/images/animation/man.svg') no-repeat;
-		@include position_size(215px, 440px, 8, 82%, 20%);
-	}
-	.main__hand::before{
-		@extend %pseudo_absolute;
-		background: url('../../static/images/animation/hand.svg') no-repeat;
-		@include position_size(215px, 440px, 7, 79%, 20%);
-		transform: rotate(150deg);
-		transform-origin: 4% 27%;
-		transition: 3s;
-		animation: hand 20s infinite;
-	}
-	.main__woman::before{
-		@extend %pseudo_absolute;
-		background: url('../../static/images/animation/woman.svg') no-repeat;
-		@include position_size(271px, 374px, 7, 92.5%, 13%);
-	}
-	.main__suitcases::before{
-		@extend %pseudo_absolute;
-		background: url('../../static/images/animation/suitcases.svg') no-repeat;
-		@include position_size(192px, 96px, 8, 110%, 13%);
-	}
-	.main__text1{
-		position: absolute;
-		display: inline-block;
-		@include position_size(160px, 120px, 9, 81%, 9%);
-		overflow: hidden;
-		&::before{
-			@extend %pseudo_relative;
-			background: url('../../static/images/animation/message1.svg') no-repeat;
-			@include position_size(160px, 105px, 9, 0%, 0%);
-			animation: text 20s 2s infinite;
-			transform: translateY(150%);
-	}
+
+
+.taxi__img{
+	position: relative;
 }
-	.main__text2{
-	@include position_size(160px, 120px, 9, 73%, 20%);
+.taxi__text{
 	position: absolute;
-	display: inline-block;
-	overflow: hidden;
-	&::before{
-		@extend %pseudo_relative;
-		background: url('../../static/images/animation/message.svg') no-repeat;
-		@include position_size(160px, 105px, 9, 0, 0%);
-		animation: text 20s 3s infinite;
-		transform: translateY(150%);
-	}
+	top: -47%;
+    left: 28%;
+    max-width: 160px;
+    width: 31%;
 }
+.man__img{
+	position: relative;
+}
+.hand__img{
+	position: absolute;
+	max-width: 72px;
+	width: 34%;
+	top: -4%;
+	left: 0%;
+	z-index: -1;
+}
+
+.woman__img{
+	max-width: 97px;
+	position: relative;
+}
+.suitcases__img{
+	position: absolute;
+	max-width: 191px;
+	width: 34%;
+	top: -4%;
+	left: 0%;
+	z-index: -1;
 }

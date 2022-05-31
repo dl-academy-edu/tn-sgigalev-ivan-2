@@ -9,6 +9,7 @@
 	width: 100%;
 	max-width: 1210px;
 	margin: 0 auto;
+	padding: 0px 15px;
 }
 
 body{
@@ -103,12 +104,6 @@ body{
 }
 
 
-/* Main__products */
-
-.product__item {
-	width: 280px;
-	height: 270px;
-}
 
 /* Titles & Subtitles */
 
@@ -165,13 +160,19 @@ a{
 
 @media ( max-width:768px ) {
 	.container{
-		max-width: 678px;
+		max-width: 768px;
+	}
+	.title{
+		font-size: 36px;
+	}
+	.page__link{
+		font-size: 20px;
 	}
 }
 
 @media ( max-width:375px ) {
 	.container{
-		max-width: 375px;
+		padding: 0;
 	}
 	.header{
 		padding: 0px 20px;
@@ -182,5 +183,11 @@ a{
 	.btn{
 	font-size: 14px;
 	padding: 8px 22px;
+	}
+	.title{
+		font-size: 24px;
+	}
+	.page__link{
+		font-size: 16px;
 	}
 }

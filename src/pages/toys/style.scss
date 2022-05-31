@@ -2,11 +2,14 @@
 @import "../../components/pseudo";
 @import "../../components/mixins";
 
-.toys-main__form{
+
+
+.main__form_wrapper{
+	width: 100%;
+	flex-wrap: wrap;
 	display: flex;
 	padding: 42px 0px;
 }
-
 
 .main__forms{
 	background: rgba(125, 151, 218, 0.2);
@@ -39,6 +42,13 @@
 	z-index: 1;
 	display: flex;
 	flex-direction: column;
+	@media ( max-width:375px ){
+		flex: 0 1 50%;
+	}
+}
+
+.main__form_options{
+	display: flex;
 }
 
 .toys__item_hover{
@@ -76,6 +86,7 @@
 }
 
 .main__toys_item img{
+	width: 100%;
 	margin: 0px 0px 30px 0px;
 }
 
@@ -179,6 +190,9 @@ input[type=range]::after{
 
 .fieldset__amount{
 	margin: 0px 45px 0px 0px;
+	@media (max-width:768px){
+		margin-right: 208px;
+	}
 }
 
 .label__amount{
@@ -206,10 +220,16 @@ input[type=range]::after{
 
 .fieldset__color{
 	margin: 0px 130px 0px 0px;
+	@media (max-width:768px){
+		margin-right: 98px;
+	}
 }
 
 .range{
 	margin: 0px 110px 0px 0px;
+	@media (max-width:768px){
+		margin-right: 88px;
+	}
 }
 
 .fieldset__delivery{
@@ -293,4 +313,28 @@ input[type="radio"] {
 	background-image: url('../../static/images/icons/Ellipse.svg');
 	padding: 4px;
 	
+}
+
+@media (max-width:375px){
+	.main__toys{
+		margin-left: 20px;
+	}
+	.fieldset__delivery {
+		margin: 0px 0px 0 0;
+  }
+  .fieldset__amount {
+	margin-right: 0px;
+}
+	.main__form_wrapper{
+		flex-direction: column;
+	& div:nth-child(1){
+		margin-bottom: 50px;
+	}
+}
+.main__header_button {
+	text-align: center;
+}
+.container{
+	padding: 0 20px;
+}
 }

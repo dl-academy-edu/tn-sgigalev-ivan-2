@@ -11,12 +11,15 @@
 		background: #E5EAF8;
 		flex: 0 1 auto;
 		margin: 0px 140px 0px 0px;
+		max-width: 680px;
 			& form{
 				padding: 42px 30px;
+				width: 100%;
 			}
 	}
 	&__text p{
 		margin: 0px 0px 20px 0px;
+		max-width: 380px;
 	}
 }
 
@@ -45,12 +48,10 @@ label{
 	&__textarea{
 		margin: 0px 0px 20px 0px;
 		border: 1px solid rgba(0, 0, 0, 0.2);
-	}
-	&__textarea{
-		width:600px;
+		width: 100%;
 		resize: none;
 		height:150px;
-		}
+	}
 }
 
 .text__bottom{
@@ -73,3 +74,29 @@ color: #C29974;
 			
 }
 
+
+
+@media ( max-width:768px ){
+	.main__row{
+		flex-direction: column;
+	}
+	.main__form{
+		order: 2;
+		margin: 0;
+	}
+	.main__text{
+		order: 1;
+		text-align: center;
+	}
+
+}
+
+
+@media ( max-width:768px ){
+	.container{
+		padding: 0 20px;
+	}
+	.form-tel-email {
+		flex-direction: column;
+	}
+}

@@ -4,8 +4,16 @@
 	background: #E5EAF8;
 	flex: 0 1 auto;
 	margin: 60px 0px 60px 0px;
+	max-width: 680px;
+	position: relative;
+	@media ( max-width:768px ){
+		max-width: 648px;
+	}
 		& form{
 			padding: 42px 30px;
+			@media ( max-width:768px ){
+				padding: 25px 20px;	
+			}
 		}
 }
 
@@ -35,6 +43,9 @@ label{
 .input__textarea{
 	margin: 0px 0px 20px 0px;
 	border: 1px solid rgba(0, 0, 0, 0.2);
+	resize: none;
+	height:150px;
+	width: 100%;
 }
 
 
@@ -51,11 +62,6 @@ color: #C29974;
 }
 
 
-#input__textarea{
-width:600px;
-resize: none;
-height:150px;
-}
 
 .form-tel-email{
 	justify-content: space-between;
@@ -73,11 +79,6 @@ padding: 0px 10px;
 
 /* PopUP */
 
-.main__form{
-	max-width: 680px;
-	margin: 0 auto;
-	position: relative;
-}
 
 .popup{
 	position: fixed;
@@ -98,6 +99,9 @@ padding: 0px 10px;
 			position: absolute;
 			top: 0;
 			right: -20px;
+			@media (max-width:375px){
+			top: -22px;
+			right: 5px;
+			}
 		}
 }
-
