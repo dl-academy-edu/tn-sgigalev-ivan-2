@@ -5,6 +5,10 @@
 
 /* General */
 
+img{
+	width: 100%;
+}
+
 .container{
 	width: 100%;
 	max-width: 1210px;
@@ -154,7 +158,6 @@ a{
 @import "./nullstyle";
 @import "./footer/footer";
 @import "./header/header";
-@import "./header__other/header__other";
 @import "./popup/popup";
 @import "./button/button";
 

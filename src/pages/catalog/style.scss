@@ -2,6 +2,9 @@
 @import "../../components/pseudo";
 @import "../../components/mixins";
 
+.header{
+	margin-bottom: 60px;
+}
 
 .products__row{
 	display: flex;
@@ -13,10 +16,6 @@
 	min-width: 247px;
 	position: relative;
 	margin-bottom: 23px;
-
-	img{
-		width: 100%;
-	}
 }
 
 .title__product{

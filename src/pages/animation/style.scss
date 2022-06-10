@@ -11,18 +11,29 @@ img{
 	width: 100%;
 }
 
+.header{
+	margin-bottom: 60px;
+}
+
 .main{
 	&__animation{
 		position: relative;
 	}
 	&__top{
-		margin-bottom: 188px;
+		margin-bottom: 100px;
+		@media ( max-width:768px ){
+			margin-bottom: 30px;
+		}
+		@media ( max-width:375px ){
+			margin-bottom: 20px;
+		}
 	}
 	&__clouds{
 		position: absolute;
 		top: -15%;
 		left: 0;
 		width: 100%;
+		animation: clouds 15s linear infinite normal;
 	}
 	&__sun{
 		position: absolute;
@@ -62,6 +73,8 @@ img{
 		top: 45%;
 		z-index: 1;
 		width: 18%;
+		animation: car 10s linear infinite normal;
+		transform: translateX(-100%);
 	}
 	&__cartwo{
 		position: absolute;
@@ -69,40 +82,39 @@ img{
 		top: 50%;
 		z-index: 2;
 		width: 14%;
+		animation: car 10s 4s linear infinite normal;
+		transform: translateX(-100%);
 	}
 	&__carthree{
 		max-width: 246px;
 		position: absolute;
-		top: 52%;
+		top: 50%;
 		z-index: 3;
 		width: 17%;
+		animation: car 10s 6s linear infinite normal;
+		transform: translateX(-100%);
 	}
 	&__carfour{
 		max-width: 268px;
 		position: absolute;
-		top: 49%;
+		top: 42%;
 		z-index: 4;
 		width: 19%;
+		animation: car 10s 2s linear infinite normal;
+		transform: translateX(-100%);
 	}
 	&__taxi{
 		max-width: 886px;
 		position: absolute;
 		top: 52%;
-		z-index: 8;
+		z-index: 6;
 		width: 37%;
-	}
-	&__texttaxi{
-		position: absolute;
-		top: -45%;
-		left: 28%;
-		z-index: 8;
-		max-width: 160px;
-		width: 32%;
+		animation: taxi 10s linear infinite reverse;
 	}
 	&__man {
 		max-width: 214px;
 		position: absolute;
-		top: 50%;
+		top: 40%;
 		left: 25%;
 		z-index: 10;
 		width: 15%;
@@ -110,34 +122,77 @@ img{
 	&__woman {
 		max-width: 271px;
 		position: absolute;
-		top: 47%;
+		top: 56%;
 		left: 16%;
 		z-index: 9;
 		width: 7%;
 	}
+	&__suitcases{
+		position: absolute;
+		top: 80%;
+		left: 16%;
+		z-index: 9;
+		width: 44%;
+	}
 }
 
+.taxi__text{
+	position: absolute;
+	top: -45%;
+	left: 28%;
+	z-index: 8;
+	max-width: 160px;
+	width: 32%;
+	overflow: hidden;
+	&_img{
+		transform: translateY(-100%);
+		animation: taxi_text 10s infinite;
+		}
+}
 
 .taxi__img{
 	position: relative;
 }
-.taxi__text{
-	position: absolute;
-	top: -47%;
-    left: 28%;
-    max-width: 160px;
-    width: 31%;
-}
+
 .man__img{
 	position: relative;
 }
+.man__text{
+	position: absolute;
+	max-width: 160px;
+	width: 85%;
+	top: -25%;
+	left: 0%;
+	z-index: -1;
+	overflow: hidden;
+	&_message{
+		transform: translateY(-100%);
+		animation: taxi_text 10s -3s infinite;
+	}
+}
+
+.woman__text{
+	position: absolute;
+	max-width: 160px;
+	top: -35%;
+	left: -20%;
+	z-index: -1;
+	overflow: hidden;
+	&_message{
+		transform: translateY(-100%);
+		animation: taxi_text 10s -4s infinite;
+	}
+}
+
 .hand__img{
 	position: absolute;
 	max-width: 72px;
 	width: 34%;
-	top: -4%;
-	left: 0%;
+	top: -7%;
+	left: 7%;
 	z-index: -1;
+	animation: hand 10s -1s infinite;
+	transform-origin: left bottom;
 }
 
 .woman__img{

@@ -8,13 +8,16 @@
 	<title>Main</title>
 	<link rel="stylesheet" href="./common.css">
 	<link rel="stylesheet" href="./style.css">
-	<link rel="stylesheet" href="../../static/fonts/fonts.css" </head>
+	<link rel="stylesheet" href="../../static/fonts/fonts.css">
+	<meta name="description" content="Учебный проект Жигалева Ивана. Начальная страница">
+	<meta name="keywords" content="Подпишись на мой youtube канал Бирлогич">
+</head>
 
 <body>
 
 	@@include('./header/index.html')
 
-	<main class="main">
+	<main class=" main">
 		<div class="container">
 			<div class="main__top">
 				<div class="main__column">
@@ -43,8 +46,8 @@
 				</div>
 			</div>
 
-			<div class="main__products">
-				<h1 class="main__products_title title">Category Products</h1>
+			<section class="main__products">
+				<h2 class="main__products_title title">Category Products</h2>
 				<ul class="products__row">
 					<li>
 						<div class="products__image_wrapper">
@@ -71,7 +74,7 @@
 						</div>
 					</li>
 				</ul>
-			</div>
+			</section>
 
 			<div class="main__products_slider">
 
@@ -109,19 +112,19 @@
 
 						<ul class="delivery__titles">
 							<li>
-								<button type="button" class="delivery__title title">Delivery</button>
+								<p class="delivery__title title">Delivery</p>
 							</li>
 
-							<li>
-								<button type="button" class="delivery__title hover__title">Delivery</button>
+							<li class="hover__title">
+								<button type="button" class="delivery__title">Delivery</button>
 							</li>
 
-							<li>
-								<button type="button" class="delivery__title hover__title">Guarantee</button>
+							<li class="hover__title">
+								<button type="button" class="delivery__title">Guarantee</button>
 							</li>
-							<li>
 
-								<button type="button" class="delivery__title hover__title">Credit</button>
+							<li class="hover__title">
+								<button type="button" class="delivery__title">Credit</button>
 							</li>
 						</ul>
 
@@ -190,7 +193,7 @@
 
 			<ul class="main__bottom">
 
-				<li class="about__column">
+				<div class="about__column">
 					<h3 class="about__top title">Design Life Kids</h3>
 					<h3 class="about__subtitle subtitle">About Us</h3>
 					<p class=" about__text text">Some days i feel like i've been working on dlk my entire
@@ -204,17 +207,20 @@
 					"class" : "about__column_button",
 					"text" : "buy now"
 					})
-				</li>
+				</div>
 
-				<li class="about__column column_map">
+				<div class="about__column column_map">
 					<h3 class="about__top title">Contacts</h3>
 					<p class="about__text text">Some days i feel like i've been working on dlk my entire
 						life
 						and
 						there are other days that i am completely shocked that four years have flown by. It's simply
 						magical.</p>
-					<img src="./../../static/images/main/map.jpg" alt="#">
-				</li>
+					<div class="column__map"><iframe
+							src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d37951.29499451698!2d49.2872766!3d53.5228438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1654780948179!5m2!1sru!2sru"
+							width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+							referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+				</div>
 
 			</ul>
 

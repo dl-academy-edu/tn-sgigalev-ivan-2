@@ -2,6 +2,10 @@
 @import "../../components/pseudo";
 @import "../../components/mixins";
 
+.header{
+	margin-bottom: 60px;
+}
+
 .main{
 	&__row{
 		display: flex;
