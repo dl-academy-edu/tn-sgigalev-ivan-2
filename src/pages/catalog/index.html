@@ -8,59 +8,69 @@
 	<title>Catalog</title>
 	<link rel="stylesheet" href="../../common.css">
 	<link rel="stylesheet" href="./style.css">
-	<link rel="stylesheet" href="../../static/fonts/fonts.css" </head>
+	<link rel="stylesheet" href="../../static/fonts/fonts.css">
+	<meta name="description"
+		content="Учебный проект Жигалева Ивана. Тут не знаю, что писать. Скажу просто спасибо Татьяне =)">
+	<meta name="keywords" content="Подпишись на мой youtube канал Бирлогич">
+</head>
 
 <body>
-	@@include('./header__other/index.html')
+	@@include('./header/index.html')
 
-	<main class="main container">
+	<main class=" main container">
 
 		<div class="main__top">
 			<h1 class="main__title title title__other"> Category Products </h1>
 
 			<ul class="main__nav_page">
-				<li><a href="index.html" class="page__link">Home</a></li>
+				<li><a href="/" class="page__link">Home</a></li>
 				<li>
-					<a href="catalog.html" class="page__link">Catalog</a>
+					<a href="index.html" class="page__link">Catalog</a>
 				</li>
 			</ul>
 
 			<ul class="products__row">
 
-				<li class="product__item shirt-icon">
-					<a href="#">
-						<p class="title__product">APPAREL KIDS</p>
-					</a>
+				<li class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-xs-6">
+					<div class="products__image_wrapper content">
+						<img src="../../static/images/main/shirt.jpg" alt="">
+						<a class="title__product">APPAREL KIDS</a>
+					</div>
 				</li>
 
-				<li class="product__item socks-icon">
-					<a href="#">
-						<p class="title__product">HOLIDAY SHOP</p>
-					</a>
+				<li class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-md-4 col-xs-6">
+					<div class="products__image_wrapper content">
+						<img src="../../static/images/main/socks.jpg" alt="">
+						<a class="title__product">HOLIDAY SHOP</a>
+					</div>
 				</li>
 
-				<li class="product__item deer-icon">
-					<a href="#">
-						<p class="title__product">TOYS</p>
-					</a>
+				<li class="col-xl-3 add-xl-3 col-lg-4 col-md-4 col-sm-6 col-xs-6">
+					<div class="products__image_wrapper content">
+						<img src="../../static/images/main/deer.jpg" alt="">
+						<a class="title__product">TOYS</a>
+					</div>
 				</li>
 
-				<li class="product__item monkey-icon">
-					<a href="#">
-						<p class="title__product">ACCESSORIES</p>
-					</a>
+				<li class="col-xl-3 skip-xl-2 col-lg-4 col-md-4 col-sm-6 col-xs-6">
+					<div class="products__image_wrapper content">
+						<img src="../../static/images/main/monkey.jpg" alt="">
+						<a class="title__product">ACCESSORIES</a>
+					</div>
 				</li>
 
-				<li class="product__item flamingo-icon">
-					<a href="#">
-						<p class="title__product">TOYS</p>
-					</a>
+				<li class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-xs-6">
+					<div class="products__image_wrapper content">
+						<img src="../../static/images/main/flamingo.jpg" alt="">
+						<a class="title__product">SALE</a>
+					</div>
 				</li>
 
-				<li class="product__item dress-icon">
-					<a href="#">
-						<p class="title__product ">APPAREL ADULTS</p>
-					</a>
+				<li class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-xs-6">
+					<div class="products__image_wrapper content">
+						<img src="../../static/images/main/dress.jpg" alt="">
+						<a class="title__product">APPAREL ADULTS</a>
+					</div>
 				</li>
 			</ul>
 
@@ -87,6 +97,7 @@
 	</main>
 
 	@@include('./footer/index.html')
+	<script src="./scripts.js"></script>
 </body>
 
 </html>

@@ -5,12 +5,11 @@
 
 /* General */
 
-body{
-	height: 100%;
+img{
+	width: 100%;
 }
 
 .container{
-	display: block;
 	width: 100%;
 	max-width: 1210px;
 	margin: 0 auto;
@@ -18,6 +17,7 @@ body{
 }
 
 body{
+	height: 100%;
 	min-height: 100%;
 	font-family: $openSans;
 	font-weight: 400;
@@ -108,12 +108,6 @@ body{
 }
 
 
-/* Main__products */
-
-.product__item {
-	width: 280px;
-	height: 270px;
-}
 
 /* Titles & Subtitles */
 
@@ -164,7 +158,39 @@ a{
 @import "./nullstyle";
 @import "./footer/footer";
 @import "./header/header";
-@import "./header__other/header__other";
 @import "./popup/popup";
 @import "./button/button";
 
+@media ( max-width:768px ) {
+	.container{
+		max-width: 768px;
+	}
+	.title{
+		font-size: 36px;
+	}
+	.page__link{
+		font-size: 20px;
+	}
+}
+
+@media ( max-width:375px ) {
+	.container{
+		padding: 0;
+	}
+	.header{
+		padding: 0px 20px;
+	}
+	.text {
+		font-size: 14px;
+  }
+	.btn{
+	font-size: 14px;
+	padding: 8px 22px;
+	}
+	.title{
+		font-size: 24px;
+	}
+	.page__link{
+		font-size: 16px;
+	}
+}
